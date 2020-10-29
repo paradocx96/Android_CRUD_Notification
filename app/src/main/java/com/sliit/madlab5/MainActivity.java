@@ -24,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        EditText personName = findViewById(R.id.editTextName);
         Button signup = findViewById(R.id.btn_signup);
+        EditText personName = findViewById(R.id.editTextName);
 
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 PendingIntent pendingIntent = PendingIntent.getActivity(MainActivity.this, 0, intent, 0);
                 NotificationCompat.Builder builder = new NotificationCompat.Builder(MainActivity.this, CHANNEL_ID)
                         .setSmallIcon(R.drawable.ic_launcher_background)
-                        .setContentTitle("Hello " + personName.getText().toString() + "! welcome to the MAD team")
+                        .setContentTitle("Hello " + personName.getText().toString().trim() + "! welcome to the MAD team")
                         .setContentText("Tap here to register!")
                         .setPriority(NotificationCompat.PRIORITY_DEFAULT)
                         // Set the intent that will fire when the user taps the notification

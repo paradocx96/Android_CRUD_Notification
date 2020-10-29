@@ -8,8 +8,8 @@
 
     <EditText
         android:id="@+id/editTextName"
-        android:layout_width="409dp"
-        android:layout_height="48dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
         android:autofillHints="@string/Name"
         android:ems="10"
         android:hint="@string/Name"
