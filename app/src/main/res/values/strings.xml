@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MAD Lab5</string>
+    <string name="channel_name">Notification Channel Name</string>
+    <string name="channel_description">Notification Channel Description</string>
+    <string name="Name">Name</string>
+    <string name="Signup">SIGN UP</string>
+</resources>
